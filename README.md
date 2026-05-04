@@ -1,1 +1,25 @@
-# web101-labs
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        body { font-family: sans-serif; padding: 2rem; }
+        button { padding: .5rem 1rem; }
+    </style>
+</head>
+<body>
+    <h1> Hello, Claude </h1>
+    <button id="go"> Click me</button>
+    <p id="out"></p>
+
+    <script>
+        const btn = document.getElementById("go");
+        const out = document.getElementById("out");
+        btn.addEvenListener("click", () => {
+            out.textContent = "You clicked at " + new Data(),toLocaleTimeString();
+        });
+    </script>
+</body>
+</html>
